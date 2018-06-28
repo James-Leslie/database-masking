@@ -1,0 +1,538 @@
+{
+    "books": {
+        "Author": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                " John Irving",
+                " Meg Cabot",
+                " Margaret Mitchell",
+                " Stella Gibbons",
+                " Ken Follett"
+            ],
+            "Scores": {
+                "area": 35.0,
+                "employer": 5.0,
+                "full_name": 60.0
+            }
+        },
+        "BID": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "no",
+                "Length": 50,
+                "Nullable": "no",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "e912d661196842ffbf8933aa2bc2d1bd",
+                "a87a1d88311c4b39844c98aefab1f613",
+                "06b65444cbd54fa4bad5238c72143e29",
+                "873201c739eb406486f6cc73f36f885b",
+                "9d7319d255204b7284c167efc0708ead"
+            ],
+            "Scores": {
+                "drivers_license": 14.0,
+                "full_address": 86.0
+            }
+        },
+        "Title": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "Tess Of The D'Urbervilles",
+                "The Godfather",
+                "Vicky Angel",
+                "Catch-22",
+                "David Copperfield"
+            ],
+            "Scores": {
+                "area": 27.0,
+                "employer": 58.0,
+                "first_name": 6.0,
+                "full_name": 3.0,
+                "last_name": 3.0,
+                "street": 2.0,
+                "street_no": 0.01
+            }
+        },
+        "tableMeta": {
+            "fk_name": "FK_books_BID-BID",
+            "num_cols": 3,
+            "num_rows": 100,
+            "pk_name": "PK_books",
+            "pkcolumn_name": "BID"
+        }
+    },
+    "details": {
+        "DateOfBirth": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "1942-09-06",
+                "1945-06-10",
+                "1946-12-10",
+                "1946-09-08",
+                "1989-12-08"
+            ],
+            "Scores": {
+                "date": 100.0
+            }
+        },
+        "UID": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "no",
+                "Length": 50,
+                "Nullable": "no",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "D02FE8DBB4851256EF08CE76821FC544",
+                "3C0547D8DFA4B92770B986AEC321D97D",
+                "62A49DF57148098541E43E4A3D655E54",
+                "0D85F938B1FCA4A2081DCD094C9B0B2B",
+                "B0452DC75B205C81AA1182659933C33D"
+            ],
+            "Scores": {
+                "drivers_license": 17.2,
+                "full_address": 82.8
+            }
+        },
+        "city": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "Nelson",
+                "Timaru",
+                "Hamilton",
+                "New Plymouth",
+                "Auckland"
+            ],
+            "Scores": {
+                "area": 1.8,
+                "city": 98.2
+            }
+        },
+        "employer": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "Westbury",
+                "Saint-Gobain",
+                "RHM Ltd.",
+                "Perpetual Unit Trust Management",
+                "Apple Inc."
+            ],
+            "Scores": {
+                "area": 41.0,
+                "employer": 46.8,
+                "first_name": 2.4,
+                "full_name": 4.6,
+                "last_name": 4.8,
+                "street": 0.002,
+                "street_no": 0.002
+            }
+        },
+        "fName": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "Karen",
+                "Nicholas",
+                "Gertrude",
+                "Agnes",
+                "Eric"
+            ],
+            "Scores": {
+                "area": 0.6,
+                "city": 0.6,
+                "first_name": 98.8
+            }
+        },
+        "gender": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "male",
+                "female",
+                "female",
+                "female",
+                "female"
+            ],
+            "Scores": {
+                "gender": 100.0
+            }
+        },
+        "lName": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "DSouza",
+                "Coles",
+                "Salian",
+                "Meyntjies",
+                "Felder"
+            ],
+            "Scores": {
+                "area": 32.6,
+                "city": 0.4,
+                "employer": 0.4,
+                "first_name": 24.2,
+                "full_name": 1.6,
+                "last_name": 40.8
+            }
+        },
+        "phone": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "0275665541",
+                "070093421",
+                "0216145431",
+                "090030142",
+                "0271306177"
+            ],
+            "Scores": {
+                "phone": 100.0
+            }
+        },
+        "postalCode": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "1011",
+                "3210",
+                "1061",
+                "932",
+                "2022"
+            ],
+            "Scores": {
+                "postcode": 83.4,
+                "street_no": 16.6
+            }
+        },
+        "street": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "Hall St",
+                "Bassett Rd",
+                "Keats Pl",
+                "Leixlep Lane",
+                "Catherine St"
+            ],
+            "Scores": {
+                "area": 4.4,
+                "employer": 0.002,
+                "first_name": 3.4,
+                "street": 92.0
+            }
+        },
+        "streetNumber": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "454",
+                "5",
+                "347",
+                "124",
+                "48"
+            ],
+            "Scores": {
+                "street_no": 100.0
+            }
+        },
+        "suburb": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "Weymouth",
+                "Paroa",
+                "Greenhithe",
+                "Manurewa",
+                "Hobsonville"
+            ],
+            "Scores": {
+                "area": 72.8,
+                "city": 2.0,
+                "employer": 5.8,
+                "first_name": 5.8,
+                "full_name": 4.2,
+                "last_name": 8.0,
+                "street": 1.4
+            }
+        },
+        "tableMeta": {
+            "fk_name": "FK_details_UID-UID",
+            "num_cols": 12,
+            "num_rows": 500,
+            "pk_name": "PK_details",
+            "pkcolumn_name": "UID"
+        }
+    },
+    "driversLicense": {
+        "UID": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "FA7B3CF4E9A5A8D88C26E8569BC352D1",
+                "4A4BC3391F5CC76D7A54E9626343BFA9",
+                "32BDD9200318964A655E6E43D7CA655F",
+                "0FF7E1AB19B3B212288FC039619661CB",
+                "21CE905CE99FA53715CB18A9D4A02D15"
+            ],
+            "Scores": {
+                "drivers_license": 17.2,
+                "full_address": 82.8
+            }
+        },
+        "driversLicense": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "Da272107",
+                "Ph528635",
+                "Fk966165",
+                "Uv151581",
+                "Kd767416"
+            ],
+            "Scores": {
+                "drivers_license": 100.0
+            }
+        },
+        "gender": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "(n/a)",
+                "Length": 100,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "(n/a)",
+                "Type": "nvarchar"
+            },
+            "ExampleData": [
+                "male",
+                "male",
+                "female",
+                "male",
+                "male"
+            ],
+            "Scores": {
+                "gender": 100.0
+            }
+        },
+        "name": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "Ashley Romero",
+                "Jimmy Bigalow",
+                "Kenya Jenny",
+                "Bonnie Stevenson",
+                "Janice Livery"
+            ],
+            "Scores": {
+                "area": 33.6,
+                "city": 0.6,
+                "employer": 2.0,
+                "first_name": 0.002,
+                "full_name": 63.6
+            }
+        },
+        "tableMeta": {
+            "num_cols": 4,
+            "num_rows": 500
+        }
+    },
+    "loans": {
+        "BID": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "54b17f1987d544a9a76b95e97c27d6c2",
+                "0c23cad1bc4c4ba3a11a9824708319e4",
+                "fa3e37a1c0244ceeab752784660828ed",
+                "2868070429404d0581f66427eb4a484e",
+                "c970da70a219424b86fcba76d5533661"
+            ],
+            "Scores": {
+                "drivers_license": 14.0,
+                "full_address": 86.0
+            }
+        },
+        "LID": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "no",
+                "Length": 50,
+                "Nullable": "no",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "46FC0037C787556229F500196285C775",
+                "090D87F3FB2E9A2A478A02BB36409405",
+                "6B0A9D4F7EDB4565C78DE1B66022941B",
+                "5A002426C1A0818AC57D428396FECD9E",
+                "27C78AD2EDD8992A27B766B7119A7BF8"
+            ],
+            "Scores": {
+                "drivers_license": 22.2,
+                "full_address": 77.8
+            }
+        },
+        "UID": {
+            "ColumnMeta": {
+                "Collation": "Latin1_General_CI_AS",
+                "Computed": "no",
+                "FixedLenNullInSource": "yes",
+                "Length": 50,
+                "Nullable": "yes",
+                "TrimTrailingBlanks": "no",
+                "Type": "varchar"
+            },
+            "ExampleData": [
+                "7F9C7A49C96B8FE8F43FC0F0CF152A2C",
+                "4DA55B2D72A41DB5088DEDDB5A23F9F3",
+                "FBED92D5B155229C970FE954F4B8B640",
+                "452BCEC575EFEE25E8770B600453B66E",
+                "95AA375B458A2BE53B78CFD5E1B5D870"
+            ],
+            "Scores": {
+                "drivers_license": 18.3,
+                "full_address": 81.7
+            }
+        },
+        "tableMeta": {
+            "num_cols": 3,
+            "num_rows": 2000,
+            "pk_name": "PK_loans",
+            "pkcolumn_name": "LID"
+        }
+    }
+}
