@@ -2,9 +2,9 @@ import pyodbc
 import numpy as np
 import pandas as pd
 import string
-import feature_engineering as fe
 import json
 import config
+import pickle as pkl
 
 
 ''' still to do:
@@ -19,8 +19,8 @@ conn = pyodbc.connect('DRIVER={SQL Server};'
                       'UID=' + config.username +
                       'PWD=' + config.password)
 
-# train decision tree
-clf = fe.train_model()
+# load trained model
+clf = pkl.load(open('model/model.sav', 'rb'))
 
 
 def classify_rows(column_df, clf):

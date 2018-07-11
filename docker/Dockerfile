@@ -15,4 +15,4 @@ RUN mv database-masking/feature_engineering.py ./feature_engineering.py
 RUN rm -rf database-masking
 
 # Train the column classification model
-CMD [ "python", "feature_engineering.py" ]
+ENTRYPOINT [ "python", "/usr/src/app/feature_engineering.py" ]
