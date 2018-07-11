@@ -6,6 +6,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.tree import DecisionTreeClassifier
 from sklearn import metrics
+import pickle as pkl
 # from tpot import TPOTClassifier
 
 # load raw reference data
@@ -224,6 +225,10 @@ def train_model():
 
     pipeline.fit(X_train, y_train)
 
+    # save the model to disk
+    filename = './model/model.sav'
+    pkl.dump(pipeline, open(filename, 'wb'))
+
     return(pipeline)
 
 
@@ -239,3 +244,6 @@ def optimize_pipeline():
     pipeline_optimizer.fit(X_train, y_train)
 
     pipeline_optimizer.export('tpot_exported_pipeline.py')
+
+
+train_model()

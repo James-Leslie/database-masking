@@ -8,11 +8,8 @@ import config
 
 
 ''' still to do:
-        - save column class scores in dictionary
-        - save dictionary as JSON file
         - train classifier to predict other cases
         - include within-column variance as training feature
-        - output summary of tables in database
 '''
 
 # Configure DB connection
